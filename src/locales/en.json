@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Our Services",
+    "about": "About Us",
+    "blog": "Our Blog",
+    "contact": "Contact Us",
+    "changeLandUse": "Change Land Use"
+  },
+  "hero": {
+    "title": "Izdhar",
+    "subtitle": "Technology Beyond Imagination",
+    "description": "We develop technology with expertise in business management and human resources on artificial intelligence to reach solutions for business and modern technology for its account without complexity for everything you have Tangier without worry"
+  },
+  "about": {
+    "title": "About",
+    "companyName": "Izdhar",
+    "heading": "Transforming Vision into Tangible Reality",
+    "description": "Izdhar is a Saudi magazine for intelligent marketing complexity definition of many to continue commercial services with their understanding by collecting income with mechanisms and modern technology for its account fighting anything Tangier without worry for the future"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Great technology on what you program",
+    "aiContent": "AI Content and Guarantee",
+    "bigData": "Big Data Analytics and Processing",
+    "bigDataDesc": "Information in selling big data and stability reports and product sales units",
+    "smartApps": "Smart Applications and Technology",
+    "smartDesigns": "Smart Interface Design",
+    "secureAcceleration": "Secure Acceleration",
+    "more": "More of Our Services"
+  },
+  "changeLandUse": {
+    "title": "Change Land Use",
+    "description": "Transform your land's purpose with our comprehensive land use change services",
+    "features": {
+      "planning": "Urban Planning Consultation",
+      "permits": "Permit Processing",
+      "documentation": "Documentation Services",
+      "compliance": "Regulatory Compliance"
+    },
+    "cta": "Learn More"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "name": "Name",
+    "phone": "Phone Number",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Send",
+    "success": "Your message has been sent successfully!",
+    "location": "Riyadh, Kingdom of Saudi Arabia"
+  },
+  "footer": {
+    "tagline": "We create the future of technology with innovative AI solutions",
+    "services": "Our Services",
+    "about": "About Us",
+    "follow": "Follow Us",
+    "rights": "All rights reserved © 2024 Izdhar",
+    "privacy": "Privacy Policy",
+    "terms": "Terms and Conditions"
+  }
+}
+

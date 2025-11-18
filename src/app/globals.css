@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+ font-family: var(--font-ge-ss-two), Arial, Helvetica, sans-serif;}
+
+#home {
+  background: url('/hero.png') no-repeat  ;
+  background-size: cover;
+}
+.services {
+  background: url('/services.png') no-repeat  ;
+  background-size: 100% 100% ;
+}
+.bg-card-white {
+      background: url('../../public/Path 52970.png') no-repeat  ;
+  background-size: 100% 100% ; 
+}
+.bg-item {
+    background: url('../../public/Path 52971.png') no-repeat  ;
+  background-size: 100% 100% ;  
+}
+.SuccessStories {
+  background: url('/Group 132967.png') no-repeat  ;
+  background-size: 100% 100% ;
+}
+.bg-item-2 {
+    background: url('../../public/Path\ 52972.png') no-repeat  ;
+  background-size: 100% 100% ;
+}
+ .contact {
+    background: url('../../public/contact.png') no-repeat  ;
+  background-size: cover ;
+ }
+  .contact-form {
+ background: url('../../public/Path 53001.png') no-repeat  ;
+  background-size: 100% 100% ;
+  }
+.footer {
+  background: url('../../public/footer.png') no-repeat  ;
+    background-size: cover  ;
+}
+ .success-stories-custom-swiper {
+          padding-bottom: 50px;
+        }
+        .success-stories-custom-swiper .swiper-pagination {
+          bottom: 0 !important;
+        }
+        .custom-success-bullet {
+          width: 12px;
+          height: 12px;
+          background: transparent;
+          opacity: 1;
+          border: 2px solid #707070;
+          transition: all 0.3s ease;
+          margin: 0 6px !important;
+        }
+        .custom-success-bullet-active {
+          background: #6b2a98;
+          width: 32px;
+          border-radius: 6px;
+          border: 2px solid #6b2a98;
+        }
+        .success-stories-custom-swiper .swiper-wrapper {
+          direction: rtl;
+        }
+        @media (max-width: 640px) {
+          .custom-success-bullet {
+            width: 10px;
+            height: 10px;
+          }
+          .custom-success-bullet-active {
+            width: 24px;
+          }
+        }
