@@ -12,8 +12,8 @@ export default function About() {
       id="about"
       className="py-12 sm:py-20 lg:py-24   relative overflow-hidden bg-[#F9F7FB]"
     >
-      <div className="absolute top-10 sm:top-20 right-5 sm:right-20 w-32 sm:w-48 md:w-64 h-32 sm:h-48 md:h-64 bg-purple-100 rounded-full blur-3xl opacity-40"></div>
-      <div className="absolute bottom-10 sm:bottom-20 left-5 sm:left-20 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-blue-100 rounded-full blur-3xl opacity-30"></div>
+      <div className="absolute top-10 sm:top-20 right-5 sm:right-20 w-32 sm:w-48 md:w-64 h-32 sm:h-48 md:h-64 bg-purple-100 rounded-full blur-3xl opacity-40 z-[1]"></div>
+      <div className="absolute bottom-10 sm:bottom-20 left-5 sm:left-20 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-blue-100 rounded-full blur-3xl opacity-30 z-[1]"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
         <div className="text-center mb-8 sm:mb-16">

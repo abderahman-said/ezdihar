@@ -11,14 +11,14 @@ export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen    overflow-x-hidden">
       {/* Glowing Effects */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 z-[1]">
         <div className="absolute top-1/4 left-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-blue-500/30 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-purple-500/30 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
         <div className="absolute top-1/2 left-1/2 w-48 sm:w-64 h-48 sm:h-64 bg-cyan-400/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
       </div>
 
       {/* Tech Grid Background */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-10 z-[1]">
         <div className="grid grid-cols-8 sm:grid-cols-12 gap-2 sm:gap-4 h-full p-4 sm:p-8">
           {[...Array(60)].map((_, i) => (
             <div key={i} className="border border-blue-400/30"></div>
@@ -26,7 +26,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-8 pt-20 sm:pt-24 md:pt-32 pb-8 sm:pb-12 md:pb-20 min-h-screen flex items-center">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-8 pt-20 sm:pt-24 md:pt-32 pb-8 sm:pb-12 md:pb-20 min-h-screen flex items-center z-10">
         <div className="grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-16 items-center w-full">
           {/* Text Content */}
           <div className={`space-y-3 sm:space-y-4 md:space-y-8 order-2 md:order-1 text-center ${dir === 'rtl' ? 'md:text-right' : 'md:text-left'}`}>

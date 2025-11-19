@@ -29,7 +29,7 @@ export default function Contact() {
       className="py-12 sm:py-20 lg:py-24 contact relative overflow-hidden"
     >
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-5 z-[1]">
         <div
           className="absolute inset-0"
           style={{

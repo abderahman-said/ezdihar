@@ -55,7 +55,7 @@ export default function Services() {
 
   return (
     <section id="services" className="py-12 sm:py-16 md:py-20 lg:py-28 services min-h-[100vh] sm:min-h-[120vh] text-white relative overflow-hidden">
-      <div className="absolute inset-0 opacity-10 pointer-events-none">
+      <div className="absolute inset-0 opacity-10 pointer-events-none z-[1]">
         <div className="absolute inset-0 bg-gradient-radial from-purple-600/20 to-transparent" />
       </div>
 

@@ -1,188 +1,188 @@
 {
-  "nav": {
-    "home": "Home",
-    "services": "Our Services",
-    "about": "About Us",
-    "blog": "Our Blog",
-    "contact": "Contact Us",
-    "changeLandUse": "Change Land Use",
-    "main": "Main navigation",
-    "openMenu": "Open menu",
-    "closeMenu": "Close menu",
-    "mobileMenu": "Mobile menu"
-  },
-  "hero": {
-    "title": "Izdhar",
-    "subtitle": "Technology Beyond Imagination",
-    "description": "We develop technology with expertise in business management and human resources on artificial intelligence to reach solutions for business and modern technology for its account without complexity for everything you have Tangier without worry"
-  },
-  "about": {
-    "title": "About",
-    "companyName": "Izdhar",
-    "heading": "Transforming Vision into Tangible Reality",
-    "description": "Izdhar is a Saudi magazine for intelligent marketing complexity definition of many to continue commercial services with their understanding by collecting income with mechanisms and modern technology for its account fighting anything Tangier without worry for the future",
-    "location": "Our main headquarters in the Kingdom of Saudi Arabia with global capabilities",
-    "locationSub": "Globally",
-    "stats": "(6.3) Revenue, (25) companies in virtual reality technologies",
-    "statsSub": "and smart registration privacy",
-    "team": "Technology team with specialized expertise"
-  },
-  "services": {
-    "title": "Our Services",
-    "subtitle": "Great technology on what you program",
-    "aiContent": "AI Content and Guarantee",
-    "bigData": "Big Data Analytics and Processing",
-    "bigDataDesc": "Information in selling big data and stability reports and product sales units",
-    "smartApps": "Smart Applications and Technology",
-    "smartDesigns": "Smart Interface Design",
-    "secureAcceleration": "Secure Acceleration",
-    "more": "More of Our Services"
-  },
-  "changeLandUse": {
-    "title": "Change Land Use",
-    "description": "Transform your land's purpose with our comprehensive land use change services",
-    "features": {
-      "planning": "Urban Planning Consultation",
-      "permits": "Permit Processing",
-      "documentation": "Documentation Services",
-      "compliance": "Regulatory Compliance"
+    "nav": {
+        "home": "Home",
+        "services": "Our Services",
+        "about": "About Us",
+        "blog": "Our Blog",
+        "contact": "Contact Us",
+        "changeLandUse": "Change Land Use",
+        "main": "Main navigation",
+        "openMenu": "Open menu",
+        "closeMenu": "Close menu",
+        "mobileMenu": "Mobile menu"
     },
-    "cta": "Learn More"
-  },
-  "contact": {
-    "title": "Contact Us",
-    "name": "Name",
-    "phone": "Phone Number",
-    "email": "Email",
-    "message": "Message",
-    "submit": "Send",
-    "success": "Your message has been sent successfully!",
-    "location": "Riyadh, Kingdom of Saudi Arabia"
-  },
-  "footer": {
-    "tagline": "We create the future of technology with innovative AI solutions",
-    "services": "Our Services",
-    "about": "About Us",
-    "follow": "Follow Us",
-    "rights": "All rights reserved © 2024 Izdhar",
-    "privacy": "Privacy Policy",
-    "terms": "Terms and Conditions",
-    "footerNav": "Footer navigation"
-  },
-  "common": {
-    "skipToContent": "Skip to main content",
-    "visitFacebook": "Visit our Facebook page",
-    "visitInstagram": "Visit our Instagram page",
-    "visitTwitter": "Visit our Twitter page",
-    "visitLinkedIn": "Visit our LinkedIn page"
-  },
-  "cta": {
-    "title": "Are you ready to build an immersive experience",
-    "titleBold": "for your business?",
-    "description": "Enter the innovations for business, technology, and future solutions",
-    "button": "Get Started with Us"
-  },
-  "services": {
-    "title": "Our Services",
-    "subtitle": "Creative technology, real results",
-    "more": "More of Our Services",
-    "items": {
-      "arVr": {
-        "title": "Augmented and Virtual Reality Experiences (AR & VR)",
-        "description": "Virtual showrooms, 360° tours, and unconventional interactive experiences for your clients"
-      },
-      "branding": {
-        "title": "Brand Strategy and Creative Innovation",
-        "description": "Building a strong identity and creative strategies that make a difference"
-      },
-      "events": {
-        "title": "Event and Exhibition Management",
-        "description": "Organizing distinctive events with the latest technologies and professional execution"
-      },
-      "hologram": {
-        "title": "Hologram Marketing",
-        "description": "Stunning holographic displays that attract attention anywhere"
-      },
-      "digital": {
-        "title": "Digital Marketing",
-        "description": "Thoughtful digital campaigns that achieve the highest return on investment"
-      }
+    "hero": {
+        "title": "Izdhar",
+        "subtitle": "Technology Beyond Imagination",
+        "description": "We develop technology with expertise in business management and human resources on artificial intelligence to reach solutions for business and modern technology for its account without complexity for everything you have Tangier without worry"
     },
-    "button": "Start with Us Now"
-  },
-  "successStories": {
-    "title": "Success Stories",
-    "subtitle": "Success stories that speak for themselves",
-    "companies": {
-      "alfalah": {
-        "name": "Al-Falah Real Estate",
-        "description": "60% increase in engagement through a 360° virtual showroom."
-      },
-      "future": {
-        "name": "Future Company",
-        "description": "200% increase in sales through integrated digital marketing."
-      },
-      "innovation": {
-        "name": "Innovation Group",
-        "description": "150% improvement in customer experience through AI technologies."
-      },
-      "development": {
-        "name": "Development Company",
-        "description": "180% revenue growth using modern marketing strategies."
-      }
+    "about": {
+        "title": "About",
+        "companyName": "Izdhar",
+        "heading": "Transforming Vision into Tangible Reality",
+        "description": "Izdhar is a Saudi magazine for intelligent marketing complexity definition of many to continue commercial services with their understanding by collecting income with mechanisms and modern technology for its account fighting anything Tangier without worry for the future",
+        "location": "Our main headquarters in the Kingdom of Saudi Arabia with global capabilities",
+        "locationSub": "Globally",
+        "stats": "(6.3) Revenue, (25) companies in virtual reality technologies",
+        "statsSub": "and smart registration privacy",
+        "team": "Technology team with specialized expertise"
+    },
+    "services": {
+        "title": "Our Services",
+        "subtitle": "Great technology on what you program",
+        "aiContent": "AI Content and Guarantee",
+        "bigData": "Big Data Analytics and Processing",
+        "bigDataDesc": "Information in selling big data and stability reports and product sales units",
+        "smartApps": "Smart Applications and Technology",
+        "smartDesigns": "Smart Interface Design",
+        "secureAcceleration": "Secure Acceleration",
+        "more": "More of Our Services"
+    },
+    "changeLandUse": {
+        "title": "Change Land Use",
+        "description": "Transform your land's purpose with our comprehensive land use change services",
+        "features": {
+            "planning": "Urban Planning Consultation",
+            "permits": "Permit Processing",
+            "documentation": "Documentation Services",
+            "compliance": "Regulatory Compliance"
+        },
+        "cta": "Learn More"
+    },
+    "contact": {
+        "title": "Contact Us",
+        "name": "Name",
+        "phone": "Phone Number",
+        "email": "Email",
+        "message": "Message",
+        "submit": "Send",
+        "success": "Your message has been sent successfully!",
+        "location": "Riyadh, Kingdom of Saudi Arabia"
+    },
+    "footer": {
+        "tagline": "We create the future of technology with innovative AI solutions",
+        "services": "Our Services",
+        "about": "About Us",
+        "follow": "Follow Us",
+        "rights": "All rights reserved © 2024 Izdhar",
+        "privacy": "Privacy Policy",
+        "terms": "Terms and Conditions",
+        "footerNav": "Footer navigation"
+    },
+    "common": {
+        "skipToContent": "Skip to main content",
+        "visitFacebook": "Visit our Facebook page",
+        "visitInstagram": "Visit our Instagram page",
+        "visitTwitter": "Visit our Twitter page",
+        "visitLinkedIn": "Visit our LinkedIn page"
+    },
+    "cta": {
+        "title": "Are you ready to build an immersive experience",
+        "titleBold": "for your business?",
+        "description": "Enter the innovations for business, technology, and future solutions",
+        "button": "Get Started with Us"
+    },
+    "services": {
+        "title": "Our Services",
+        "subtitle": "Creative technology, real results",
+        "more": "More of Our Services",
+        "items": {
+            "arVr": {
+                "title": "Augmented and Virtual Reality Experiences (AR & VR)",
+                "description": "Virtual showrooms, 360° tours, and unconventional interactive experiences for your clients"
+            },
+            "branding": {
+                "title": "Brand Strategy and Creative Innovation",
+                "description": "Building a strong identity and creative strategies that make a difference"
+            },
+            "events": {
+                "title": "Event and Exhibition Management",
+                "description": "Organizing distinctive events with the latest technologies and professional execution"
+            },
+            "hologram": {
+                "title": "Hologram Marketing",
+                "description": "Stunning holographic displays that attract attention anywhere"
+            },
+            "digital": {
+                "title": "Digital Marketing",
+                "description": "Thoughtful digital campaigns that achieve the highest return on investment"
+            }
+        },
+        "button": "Start with Us Now"
+    },
+    "successStories": {
+        "title": "Success Stories",
+        "subtitle": "Success stories that speak for themselves",
+        "companies": {
+            "alfalah": {
+                "name": "Al-Falah Real Estate",
+                "description": "60% increase in engagement through a 360° virtual showroom."
+            },
+            "future": {
+                "name": "Future Company",
+                "description": "200% increase in sales through integrated digital marketing."
+            },
+            "innovation": {
+                "name": "Innovation Group",
+                "description": "150% improvement in customer experience through AI technologies."
+            },
+            "development": {
+                "name": "Development Company",
+                "description": "180% revenue growth using modern marketing strategies."
+            }
+        }
+    },
+    "testimonials": {
+        "title": "Client Testimonials",
+        "subtitle": "What our clients say about us.",
+        "items": {
+            "1": {
+                "quote": "\"Working with Izdhar is like working with the future, every project exceeds expectations\"",
+                "name": "Mr. Ahmed Al-Zain",
+                "position": "CEO Manager ELFalah Realestate"
+            },
+            "2": {
+                "quote": "\"Excellent service, fast delivery, and a very professional team\"",
+                "name": "Mr. Mahmoud Hussein",
+                "position": "Founder MH Group"
+            },
+            "3": {
+                "quote": "\"Professional work and commitment to deadlines... truly a great experience\"",
+                "name": "Mr. Yasser Sami",
+                "position": "General Manager YS Agency"
+            },
+            "4": {
+                "quote": "\"Izdhar is the perfect partner for our business growth... we highly recommend them\"",
+                "name": "Mr. Ali Al-Ghamdi",
+                "position": "Owner AG Real Estate"
+            }
+        }
+    },
+    "whyChoose": {
+        "title": "Why Choose Izdhar?",
+        "subtitle": "Choose innovation the Saudi way",
+        "features": {
+            "1": {
+                "text": "Integrating ",
+                "bold": "Creativity and Technology ",
+                "after": "in one system"
+            },
+            "2": {
+                "text": "Deep understanding ",
+                "bold": "of Saudi culture and purchasing behavior"
+            },
+            "3": {
+                "text": "Trusted by leading ",
+                "bold": "sectors ",
+                "middle": "Real Estate, ",
+                "after": "government entities, luxury"
+            },
+            "4": {
+                "text": "Measurable results ",
+                "bold": "and ",
+                "middle": "clear investment return",
+                "after": ""
+            }
+        }
     }
-  },
-  "testimonials": {
-    "title": "Client Testimonials",
-    "subtitle": "What our clients say about us.",
-    "items": {
-      "1": {
-        "quote": "\"Working with Izdhar is like working with the future, every project exceeds expectations\"",
-        "name": "Mr. Ahmed Al-Zain",
-        "position": "CEO Manager ELFalah Realestate"
-      },
-      "2": {
-        "quote": "\"Excellent service, fast delivery, and a very professional team\"",
-        "name": "Mr. Mahmoud Hussein",
-        "position": "Founder MH Group"
-      },
-      "3": {
-        "quote": "\"Professional work and commitment to deadlines... truly a great experience\"",
-        "name": "Mr. Yasser Sami",
-        "position": "General Manager YS Agency"
-      },
-      "4": {
-        "quote": "\"Izdhar is the perfect partner for our business growth... we highly recommend them\"",
-        "name": "Mr. Ali Al-Ghamdi",
-        "position": "Owner AG Real Estate"
-      }
-    }
-  },
-  "whyChoose": {
-    "title": "Why Choose Izdhar?",
-    "subtitle": "Choose innovation the Saudi way",
-    "features": {
-      "1": {
-        "text": "Integrating ",
-        "bold": "Creativity and Technology ",
-        "after": "in one system"
-      },
-      "2": {
-        "text": "Deep understanding ",
-        "bold": "of Saudi culture and purchasing behavior"
-      },
-      "3": {
-        "text": "Trusted by leading ",
-        "bold": "sectors ",
-        "middle": "Real Estate, ",
-        "after": "government entities, luxury"
-      },
-      "4": {
-        "text": "Measurable results ",
-        "bold": "and ",
-        "middle": "clear investment return"
-      }
-    }
-  }
 }
-

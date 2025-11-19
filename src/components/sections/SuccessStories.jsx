@@ -1,12 +1,15 @@
 "use client";
 
+import { useEffect, useRef, useState } from 'react';
 import Image from "next/image";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import { useTranslation } from 'react-i18next';
 
 export default function SuccessStories() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const swiperRef = useRef(null);
+  const [key, setKey] = useState(0);
 
   const stories = [
     {
@@ -39,9 +42,19 @@ export default function SuccessStories() {
     }
   ];
 
+  // Reset Swiper when language changes
+  useEffect(() => {
+    if (swiperRef.current) {
+      swiperRef.current.update();
+      swiperRef.current.slideTo(0);
+    }
+    // Force re-render to update direction
+    setKey(prev => prev + 1);
+  }, [i18n.language]);
+
   return (
     <section className="SuccessStories pb-12 sm:pb-16 md:pb-24 pt-24 sm:pt-32 md:pt-[150px]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
         <div className="text-center mb-6 sm:mb-8 md:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 text-[#60008E]">
             {t('successStories.title')}
@@ -53,8 +66,12 @@ export default function SuccessStories() {
 
         <div className="max-w-[965.67px] mx-auto pb-8 sm:pb-12 md:pb-16">
           <Swiper
+            key={key}
+            onSwiper={(swiper) => {
+              swiperRef.current = swiper;
+            }}
             modules={[Pagination, Autoplay]}
-            spaceBetween={10}
+            spaceBetween={30}
             slidesPerView={1}
             pagination={{
               clickable: true,

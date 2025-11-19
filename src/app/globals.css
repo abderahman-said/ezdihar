@@ -49,10 +49,10 @@ body.font-en {
     inset: 0;
     background: url('/hero.png') no-repeat;
     background-size: cover;
-    z-index: -1;
+    z-index: 0;
 }
 
-html[dir="rtl"] #home::before {
+html[dir="ltr"] #home::before {
     transform: scaleX(-1);
     transform-origin: center;
 }
@@ -67,10 +67,10 @@ html[dir="rtl"] #home::before {
     inset: 0;
     background: url('/services.png') no-repeat;
     background-size: 100% 100%;
-    z-index: -1;
+    z-index: 0;
 }
 
-html[dir="rtl"] .services::before {
+html[dir="ltr"] .services::before {
     transform: scaleX(-1);
     transform-origin: center;
 }
@@ -95,10 +95,10 @@ html[dir="rtl"] .services::before {
     inset: 0;
     background: url('/Group 132967.png') no-repeat;
     background-size: 100% 100%;
-    z-index: -1;
+    z-index: 0;
 }
 
-html[dir="rtl"] .SuccessStories::before {
+html[dir="ltr"] .SuccessStories::before {
     transform: scaleX(-1);
     transform-origin: center;
 }
@@ -118,10 +118,10 @@ html[dir="rtl"] .SuccessStories::before {
     inset: 0;
     background: url('../../public/contact.png') no-repeat;
     background-size: cover;
-    z-index: -1;
+    z-index: 0;
 }
 
-html[dir="rtl"] .contact::before {
+html[dir="ltr"] .contact::before {
     transform: scaleX(-1);
     transform-origin: center;
 }
@@ -141,10 +141,10 @@ html[dir="rtl"] .contact::before {
     inset: 0;
     background: url('../../public/footer.png') no-repeat;
     background-size: cover;
-    z-index: -1;
+    z-index: 0;
 }
 
-html[dir="rtl"] .footer::before {
+html[dir="ltr"] .footer::before {
     transform: scaleX(-1);
     transform-origin: center;
 }

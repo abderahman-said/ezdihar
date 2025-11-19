@@ -17,8 +17,8 @@ export default function Footer() {
 
   return (
     <footer className="" role="contentinfo">
-      <div className="footer mt-[-141px] py-20 pt-[150px]">
-        <div className="flex items-center flex-col justify-center gap-3 pb-4">
+      <div className="footer mt-[-141px] py-20 pt-[150px] relative">
+        <div className="flex items-center flex-col justify-center gap-3 pb-4 relative z-10">
             <a href="#home" onClick={(e) => handleLinkClick(e, '#home')} aria-label={t('nav.home')}>
               <Image width={161.17} height={70} src="/logo-footer.png" alt={t('hero.title')} className="w-[161.17px] h-[70px] object-contain" />
             </a>
@@ -33,7 +33,7 @@ export default function Footer() {
           ></div>
          <div className='text-[#530073] text-base sm:text-lg md:text-[22px] text-center px-4'>{t('footer.tagline')}</div>
           </div>
-        <nav className="flex flex-col sm:flex-row items-center justify-between px-4 sm:px-6 md:px-10 pt-4 mx-auto gap-4 sm:gap-0" aria-label={t('footer.footerNav') || 'Footer navigation'}>
+        <nav className="flex flex-col sm:flex-row items-center justify-between px-4 sm:px-6 md:px-10 pt-4 mx-auto gap-4 sm:gap-0 relative z-10" aria-label={t('footer.footerNav') || 'Footer navigation'}>
         <div className="hidden sm:block"></div>
            
           <div className="flex flex-wrap items-center justify-center max-w-[800px] text-base sm:text-lg md:text-[22px] gap-4 sm:gap-6 md:gap-8" role="menubar">

@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef, useState } from 'react';
 import Image from "next/image";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
@@ -7,7 +8,9 @@ import { useTranslation } from 'react-i18next';
 import { FaQuoteLeft } from "react-icons/fa";
 
 export default function Testimonials() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const swiperRef = useRef(null);
+  const [key, setKey] = useState(0);
 
   const stories = [
     {
@@ -40,9 +43,19 @@ export default function Testimonials() {
     },
   ];
 
+  // Reset Swiper when language changes
+  useEffect(() => {
+    if (swiperRef.current) {
+      swiperRef.current.update();
+      swiperRef.current.slideTo(0);
+    }
+    // Force re-render to update direction
+    setKey(prev => prev + 1);
+  }, [i18n.language]);
+
   return (
     <section className="Testimonials relative py-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
         
         {/* Heading */}
         <div className="text-center mb-16">
@@ -79,6 +92,10 @@ export default function Testimonials() {
         {/* Slider */}
         <div className="max-w-[1109px] mx-auto relative z-10">
           <Swiper
+            key={key}
+            onSwiper={(swiper) => {
+              swiperRef.current = swiper;
+            }}
             modules={[Pagination, Autoplay]}
             spaceBetween={30}
             slidesPerView={1}
