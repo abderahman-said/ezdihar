@@ -4,38 +4,24 @@ import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 
 export default function ChangeLandUse() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const features = [
     {
       image: '/Group 132966.png',
-      title: 'دمج الإبداع والتكنولوجيا',
-      titleBold: 'الإبداع والتكنولوجيا',
-      description: 'دمج',
-      descriptionAfter: 'في منظومة واحدة',
+      key: '1',
     },
     {
       image: '/Group 132965.png',
-      title: 'فهم عميق للثقافة والسلوك الشرائي السعودي',
-      titleBold: 'للثقافة والسلوك الشرائي السعودي',
-      description: 'فهم عميق',
-      descriptionAfter: '',
+      key: '2',
     },
     {
       image: '/Group 132964.png',
-      title: 'موثوق من أبرز القطاعات العقارات، والجهات الحكومية، luxury الفخ',
-      titleBold: 'القطاعات',
-      description: 'موثوق من أبرز',
-      descriptionMiddle: 'العقارات،',
-      descriptionAfter: 'والجهات الحكومية، luxury الفخ',
+      key: '3',
     },
     {
       image: '/Group 132963.png',
-      title: 'نتائج قابلة للقياس وعائد استثماري واضح',
-      titleBold: 'للقياس و',
-      description: 'نتائج قابلة',
-      descriptionMiddle: 'عائد استثماري',
-      descriptionAfter: 'واضح',
+      key: '4',
     }
   ];
 
@@ -44,15 +30,18 @@ export default function ChangeLandUse() {
       <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
         <div className="text-center mb-8 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-[#60008E]">
-            لماذا تختار إزدهار؟
+            {t('whyChoose.title')}
           </h2>
           <p className="text-lg sm:text-2xl text-[#33BEF2] max-w-3xl mx-auto">
-            اختر الابتكار على الطريقة السعودية
+            {t('whyChoose.subtitle')}
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {features.map((feature, index) => {
+            const featureKey = feature.key;
+            const featureData = t(`whyChoose.features.${featureKey}`, { returnObjects: true });
+            
             return (
               <div key={index} className="text-center group hover:transform hover:scale-105 transition-all duration-300">
                 <div className="mb-6 flex justify-center">
@@ -61,54 +50,49 @@ export default function ChangeLandUse() {
                       src={feature.image}
                       width={140}
                       height={140}
-                      alt={feature.title}
+                      alt={t(`whyChoose.features.${featureKey}.text`) + t(`whyChoose.features.${featureKey}.bold`)}
                       className="object-contain drop-shadow-lg"
                     />
                   </div>
                 </div>
                 
                 <div className="text-lg sm:text-xl lg:text-[22px] text-gray-700 leading-relaxed px-2">
-                  {/* First Feature - دمج الإبداع والتكنولوجيا */}
-                  {index === 0 && (
+                  {/* First Feature */}
+                  {featureKey === '1' && (
                     <>
-                      <span className="text-gray-600">دمج </span>
-                      <span className="font-bold text-gray-900">الإبداع والتكنولوجيا </span>
-                      <span className="text-gray-600">في منظومة واحدة</span>
+                      <span className="text-gray-600">{t('whyChoose.features.1.text')}</span>
+                      <span className="font-bold text-gray-900">{t('whyChoose.features.1.bold')}</span>
+                      <span className="text-gray-600">{t('whyChoose.features.1.after')}</span>
                     </>
                   )}
                   
-                  {/* Second Feature - فهم عميق */}
-                  {index === 1 && (
+                  {/* Second Feature */}
+                  {featureKey === '2' && (
                     <>
-                      <span className="text-gray-600">فهم عميق </span>
-                      <span className="font-bold text-gray-900">للثقافة والسلوك</span>
-                      <br />
-                      <span className="font-bold text-gray-900">الشرائي السعودي</span>
+                      <span className="text-gray-600">{t('whyChoose.features.2.text')}</span>
+                      <span className="font-bold text-gray-900">{t('whyChoose.features.2.bold')}</span>
                     </>
                   )}
                   
-                  {/* Third Feature - موثوق من أبرز */}
-                  {index === 2 && (
+                  {/* Third Feature */}
+                  {featureKey === '3' && (
                     <>
-                      <span className="text-gray-600">موثوق من أبرز </span>
-                      <span className="font-bold text-gray-900">القطاعات </span>
-                      <span className="text-gray-600">العقارات،</span>
+                      <span className="text-gray-600">{t('whyChoose.features.3.text')}</span>
+                      <span className="font-bold text-gray-900">{t('whyChoose.features.3.bold')}</span>
+                      <span className="text-gray-600">{t('whyChoose.features.3.middle')}</span>
                       <br />
-                      <span className="text-gray-600">والجهات الحكومية، </span>
-                      <span className="font-bold text-gray-900">luxury </span>
-                      <span className="text-gray-600">الفخ</span>
+                      <span className="text-gray-600">{t('whyChoose.features.3.after')}</span>
                     </>
                   )}
                   
-                  {/* Fourth Feature - نتائج قابلة */}
-                  {index === 3 && (
+                  {/* Fourth Feature */}
+                  {featureKey === '4' && (
                     <>
-                      <span className="text-gray-600">نتائج قابلة </span>
-                      <span className="font-bold text-gray-900">للقياس </span>
-                      <span className="text-gray-600">و</span>
+                      <span className="text-gray-600">{t('whyChoose.features.4.text')}</span>
+                      <span className="font-bold text-gray-900">{t('whyChoose.features.4.bold')}</span>
+                      <span className="text-gray-600">{t('whyChoose.features.4.middle')}</span>
                       <br />
-                      <span className="font-bold text-gray-900">عائد استثماري </span>
-                      <span className="text-gray-600">واضح</span>
+                      <span className="font-bold text-gray-900">{t('whyChoose.features.4.after')}</span>
                     </>
                   )}
                 </div>

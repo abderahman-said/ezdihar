@@ -1,20 +1,18 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
-export function useLanguage() {
+export default function HtmlAttributes() {
   const { i18n } = useTranslation();
-  const [dir, setDir] = useState('rtl');
 
   useEffect(() => {
     const currentLang = i18n.language || 'ar';
     const currentDir = currentLang === 'ar' ? 'rtl' : 'ltr';
-    setDir(currentDir);
     
-    // Update html attributes (HtmlAttributes component also handles this, but this ensures sync)
-    document.documentElement.setAttribute('dir', currentDir);
+    // Update html attributes
     document.documentElement.setAttribute('lang', currentLang);
+    document.documentElement.setAttribute('dir', currentDir);
     
     // Update body class for font
     document.body.classList.remove('font-ar', 'font-en');
@@ -25,6 +23,6 @@ export function useLanguage() {
     }
   }, [i18n.language]);
 
-  return { dir, language: i18n.language || 'ar' };
+  return null;
 }
 

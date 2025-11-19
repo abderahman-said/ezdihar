@@ -4,6 +4,7 @@ import { useLanguage } from '@/hooks/useLanguage';
 import dynamic from 'next/dynamic';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import StructuredData from '@/components/StructuredData';
 
 // Dynamic imports for sections
 const Hero = dynamic(() => import('@/components/sections/Hero'));
@@ -20,15 +21,18 @@ export default function IzdharWebsite() {
 
   return (
     <div className="min-h-screen bg-white" dir={dir}>
+      <StructuredData />
       <Header />
-      <Hero />
-      <About />
-      <Services />
-      <ChangeLandUse />
-      <SuccessStories />
-      <Testimonials />
-      <CTA />
-      <Contact />
+      <main id="main-content" role="main">
+        <Hero />
+        <About />
+        <Services />
+        <ChangeLandUse />
+        <SuccessStories />
+        <Testimonials />
+        <CTA />
+        <Contact />
+      </main>
       <Footer />
     </div>
   );

@@ -30,9 +30,11 @@ export default function LanguageSwitcher({ mobile = false, color = "#FFFFFF" }) 
       onMouseLeave={(e) => {
         e.currentTarget.style.backgroundColor = 'transparent';
       }}
+      aria-label={i18n.language === 'ar' ? 'Switch to English' : 'التبديل إلى العربية'}
+      aria-pressed="false"
     >
-      {i18n.language === 'ar' ? 'English' : 'العربية'}
-      <FaGlobe className="w-4 h-4" style={{ color }} />
+      <span aria-hidden="true">{i18n.language === 'ar' ? 'English' : 'العربية'}</span>
+      <FaGlobe className="w-4 h-4" style={{ color }} aria-hidden="true" />
     </button>
   );
 }

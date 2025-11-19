@@ -12,8 +12,8 @@ export default function About() {
       id="about"
       className="py-12 sm:py-20 lg:py-24   relative overflow-hidden bg-[#F9F7FB]"
     >
-      <div className="absolute top-20 right-20 w-48 sm:w-64 h-48 sm:h-64 bg-purple-100 rounded-full blur-3xl opacity-40"></div>
-      <div className="absolute bottom-20 left-20 w-64 sm:w-96 h-64 sm:h-96 bg-blue-100 rounded-full blur-3xl opacity-30"></div>
+      <div className="absolute top-10 sm:top-20 right-5 sm:right-20 w-32 sm:w-48 md:w-64 h-32 sm:h-48 md:h-64 bg-purple-100 rounded-full blur-3xl opacity-40"></div>
+      <div className="absolute bottom-10 sm:bottom-20 left-5 sm:left-20 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-blue-100 rounded-full blur-3xl opacity-30"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
         <div className="text-center mb-8 sm:mb-16">
@@ -38,7 +38,7 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-br from-purple-400 to-cyan-400 rounded-full blur-3xl opacity-20 animate-pulse"></div>
               <Image
                 src="/abut.png"
-                alt="About Robot"
+                alt={t('about.heading')}
                 width={500}
                 height={500}
                 className="relative w-full drop-shadow-2xl object-contain z-10"
@@ -54,39 +54,39 @@ export default function About() {
               {t("about.description")}
             </p>
 
-            <div className="space-y-4 sm:space-y-6 pt-4">
-              <div className="flex items-start gap-4 sm:gap-6   ">
-                <FaMapMarkerAlt className="text-[#33BEF2] text-lg sm:text-3xl" />
+            <div className="space-y-3 sm:space-y-4 md:space-y-6 pt-2 sm:pt-4">
+              <div className="flex items-start gap-3 sm:gap-4 md:gap-6">
+                <FaMapMarkerAlt className="text-[#33BEF2] text-base sm:text-xl md:text-2xl lg:text-3xl shrink-0 mt-1" aria-hidden="true" />
 
                 <div>
                   <p className="text-[#707070] text-sm sm:text-lg font-medium">
-                    مقرنا الرئيسية المملكة العربية السعودية بع إمكانية
+                    {t('about.location')}
                   </p>
                   <p className="text-[#707070] mt-1 text-sm sm:text-base">
-                    عالمياً عالمياً
+                    {t('about.locationSub')}
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 sm:gap-6   ">
-                <FaChartLine className="text-[#33BEF2] text-lg sm:text-3xl" />
+              <div className="flex items-start gap-3 sm:gap-4 md:gap-6">
+                <FaChartLine className="text-[#33BEF2] text-base sm:text-xl md:text-2xl lg:text-3xl shrink-0 mt-1" aria-hidden="true" />
 
                 <div>
                   <p className="text-[#707070] text-sm sm:text-lg font-medium">
-                    (٦٫٣) الإيراواليت، (٢٥) كم نسه في تقليات الواقع المضز
+                    {t('about.stats')}
                   </p>
-                  <p className="text-[#707070]   mt-1 text-sm sm:text-base">
-                    والخصوصيات السجيل الذكلي
+                  <p className="text-[#707070] mt-1 text-sm sm:text-base">
+                    {t('about.statsSub')}
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 sm:gap-6   ">
-                <FaRobot className="text-[#33BEF2] text-lg sm:text-3xl" />
+              <div className="flex items-start gap-3 sm:gap-4 md:gap-6">
+                <FaRobot className="text-[#33BEF2] text-base sm:text-xl md:text-2xl lg:text-3xl shrink-0 mt-1" aria-hidden="true" />
 
                 <div>
                   <p className="text-[#707070] text-sm sm:text-lg font-medium">
-                    فريق الذكولوجيا بسند كمصص تكافص أصيل
+                    {t('about.team')}
                   </p>
                 </div>
               </div>

@@ -26,31 +26,55 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-8 pt-24 sm:pt-32 pb-12 sm:pb-20 min-h-screen flex items-center">
-        <div className="grid md:grid-cols-2 gap-8 sm:gap-16 items-center w-full">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-8 pt-20 sm:pt-24 md:pt-32 pb-8 sm:pb-12 md:pb-20 min-h-screen flex items-center">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-16 items-center w-full">
           {/* Text Content */}
-          <div className={`  space-y-4 sm:space-y-8 order-2 md:order-1 text-center ${dir === 'rtl' ? 'md:text-right' : 'md:text-left'}`}>
-            <h1 className="text-4xl text-[#33BEF2] sm:text-5xl lg:text-6xl font-bold leading-tight">
+          <div className={`space-y-3 sm:space-y-4 md:space-y-8 order-2 md:order-1 text-center ${dir === 'rtl' ? 'md:text-right' : 'md:text-left'}`}>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#33BEF2] font-bold leading-tight">
               {t('hero.title')}
             </h1>
-            <h2 className="text-2xl text-white sm:text-3xl lg:text-4xl font-semibold text-purple-300">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-purple-300">
               {t('hero.subtitle')}
             </h2>
-            <p className="text-base sm:text-lg text-gray-200 leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed px-2 sm:px-0">
               {t('hero.description')}
             </p>
-            <div className="flex gap-3 sm:gap-5 pt-4 justify-center md:justify-start">
-              <a href="#" className=" transition transform hover:scale-110">
-                <FaFacebookF className="text-white text-lg sm:text-2xl" />
+            <div className="flex gap-3 sm:gap-5 pt-4 justify-center md:justify-start" role="list">
+              <a 
+                href="https://www.facebook.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="transition transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-purple-300 focus:ring-offset-2 rounded p-2"
+                aria-label={t('common.visitFacebook')}
+              >
+                <FaFacebookF className="text-white text-lg sm:text-2xl" aria-hidden="true" />
               </a>
-              <a href="#" className="   transition transform hover:scale-110">
-                <FaInstagram className="text-white text-lg sm:text-2xl" />
+              <a 
+                href="https://www.instagram.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="transition transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-purple-300 focus:ring-offset-2 rounded p-2"
+                aria-label={t('common.visitInstagram')}
+              >
+                <FaInstagram className="text-white text-lg sm:text-2xl" aria-hidden="true" />
               </a>
-              <a href="#" className="  transition transform hover:scale-110">
-                <FaTwitter className="text-white text-lg sm:text-2xl" />
+              <a 
+                href="https://www.twitter.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="transition transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-purple-300 focus:ring-offset-2 rounded p-2"
+                aria-label={t('common.visitTwitter')}
+              >
+                <FaTwitter className="text-white text-lg sm:text-2xl" aria-hidden="true" />
               </a>
-              <a href="#" className="  transition transform hover:scale-110">
-                <FaLinkedinIn className="text-white text-lg sm:text-2xl" />
+              <a 
+                href="https://www.linkedin.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="transition transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-purple-300 focus:ring-offset-2 rounded p-2"
+                aria-label={t('common.visitLinkedIn')}
+              >
+                <FaLinkedinIn className="text-white text-lg sm:text-2xl" aria-hidden="true" />
               </a>
             </div>
           </div>

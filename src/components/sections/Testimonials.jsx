@@ -3,39 +3,40 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
-
- 
+import { useTranslation } from 'react-i18next';
 import { FaQuoteLeft } from "react-icons/fa";
 
 export default function Testimonials() {
+  const { t } = useTranslation();
+
   const stories = [
     {
       id: 1,
       logo: "/NoPath.png",
-      title: "“العمل مع إزدهار يشبه العمل مع المستقبل كل مشروع يفوق التوقعات”",
-      name: "أ/ احمد الزين",
-      position: "CEO Manger ELFalah Realestate",
+      title: t('testimonials.items.1.quote'),
+      name: t('testimonials.items.1.name'),
+      position: t('testimonials.items.1.position'),
     },
     {
       id: 2,
       logo: "/NoPath.png",
-      title: "“خدمة ممتازة وسرعة في الإنجاز وفريق عمل محترف جدًا”",
-      name: "أ/ محمود حسين",
-      position: "Founder MH Group",
+      title: t('testimonials.items.2.quote'),
+      name: t('testimonials.items.2.name'),
+      position: t('testimonials.items.2.position'),
     },
     {
       id: 3,
       logo: "/NoPath.png",
-      title: "“شغل احترافي وملتزمين بالمواعيد… تجربة رائعة فعلًا”",
-      name: "أ/ ياسر سامي",
-      position: "General Manager YS Agency",
+      title: t('testimonials.items.3.quote'),
+      name: t('testimonials.items.3.name'),
+      position: t('testimonials.items.3.position'),
     },
     {
       id: 4,
       logo: "/NoPath.png",
-      title: "“إزدهار هي الشريك المثالي لنمو أعمالنا… ننصح بهم بشدة”",
-      name: "أ/ علي الغامدي",
-      position: "Owner AG Real Estate",
+      title: t('testimonials.items.4.quote'),
+      name: t('testimonials.items.4.name'),
+      position: t('testimonials.items.4.position'),
     },
   ];
 
@@ -46,7 +47,7 @@ export default function Testimonials() {
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#60008E]">
-            آراء العملاء
+            {t('testimonials.title')}
           </h2>
 
           <div
@@ -57,10 +58,11 @@ export default function Testimonials() {
               before:h-4 before:bg-[#33BEF2] before:rounded-full
               before:border-2 before:border-white
             "
+            aria-hidden="true"
           />
 
           <p className="text-lg sm:text-2xl text-[#33BEF2] max-w-3xl mx-auto mt-4">
-            ماذا يقول عملاؤنا عنا.
+            {t('testimonials.subtitle')}
           </p>
         </div>
 
@@ -71,6 +73,7 @@ export default function Testimonials() {
           src="/Mask Group 15.png"
           alt="Background"
           className="absolute left-0 bottom-0 w-full h-[80%] object-cover"
+          aria-hidden="true"
         />
 
         {/* Slider */}
@@ -91,10 +94,10 @@ export default function Testimonials() {
           >
             {stories.map((story) => (
               <SwiperSlide key={story.id}>
-                <div className="text-white py-10 flex mx-[50px] items-end relative">
+                <div className="text-white py-6 sm:py-8 md:py-10 flex flex-col sm:flex-row mx-2 sm:mx-4 md:mx-[50px] items-end relative gap-4 sm:gap-0">
 
                   {/* Quote icon */}
-                  <FaQuoteLeft className="text-3xl sm:text-4xl lg:text-5xl text-[#530073] absolute top-[60px] end-[70px]" />
+                  <FaQuoteLeft className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#530073] absolute top-4 sm:top-8 md:top-[60px] end-4 sm:end-8 md:end-[70px] z-10" aria-hidden="true" />
 
                   {/* Image */}
                   <Image
@@ -102,14 +105,14 @@ export default function Testimonials() {
                     height={360}
                     src="/Group 132970.png"
                     alt="Testimonial"
-                    className="w-[200px] h-[200px] sm:w-[326px] sm:h-[360px] relative -bottom-2 -end-9 z-[1]"
+                    className="w-[150px] h-[150px] sm:w-[200px] sm:h-[220px] md:w-[280px] md:h-[310px] lg:w-[326px] lg:h-[360px] relative sm:-bottom-2 sm:-end-9 z-[1] mx-auto sm:mx-0"
                   />
 
                   {/* Text Block */}
-                  <div className="bg-item-2 px-14 ps-16 min-h-[317px] flex flex-col justify-center">
-                    <h4 className="text-[24px] text-[#000000bc] pb-3">{story.title}</h4>
-                    <h5 className="text-[20px] text-[#530073] pb-1">{story.name}</h5>
-                    <h6 className="text-[19px] text-[#707070]">{story.position}</h6>
+                  <div className="bg-item-2 px-6 sm:px-10 md:px-14 sm:ps-12 md:ps-16 min-h-[200px] sm:min-h-[250px] md:min-h-[317px] flex flex-col justify-center w-full sm:w-auto">
+                    <h4 className="text-base sm:text-lg md:text-xl lg:text-[24px] text-[#000000bc] pb-2 sm:pb-3">{story.title}</h4>
+                    <h5 className="text-base sm:text-lg md:text-[20px] text-[#530073] pb-1">{story.name}</h5>
+                    <h6 className="text-sm sm:text-base md:text-[19px] text-[#707070]">{story.position}</h6>
                   </div>
                 </div>
               </SwiperSlide>
@@ -117,8 +120,6 @@ export default function Testimonials() {
           </Swiper>
         </div>
       </div>
-
-      
     </section>
   );
 }

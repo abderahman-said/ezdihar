@@ -67,15 +67,15 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="  px-16   py-16 pt-20  contact-form order-1 md:order-2">
-            <h3 className="text-2xl sm:text-3xl font-bold text-[#530073] mb-4  ">
-            <span className='me-2 bg-[#33BEF2] min-w-[20px] inline-block rounded-3xl w-[20px] h-[20px]'></span>  {t('contact.title')}
+          <div className="px-6 sm:px-10 md:px-16 py-8 sm:py-12 md:py-16 md:pt-20 contact-form order-1 md:order-2">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#530073] mb-4">
+            <span className='me-2 bg-[#33BEF2] min-w-[16px] sm:min-w-[20px] inline-block rounded-3xl w-[16px] h-[16px] sm:w-[20px] sm:h-[20px]'></span>  {t('contact.title')}
             </h3>
             <div
               className="
-  relative w-20 h-2 bg-[#530073] rounded-3xl  mb-8 ms-[20px]
+  relative w-16 sm:w-20 h-2 bg-[#530073] rounded-3xl mb-6 sm:mb-8 ms-[16px] sm:ms-[20px]
   before:content-[''] before:absolute before:top-1/2 before:-translate-y-1/2
-  before:-left-2 before:w-4 before:h-4 before:bg-[#33BEF2]
+  before:-left-2 before:w-3 before:h-3 sm:before:w-4 sm:before:h-4 before:bg-[#33BEF2]
   before:rounded-full before:border-2 before:border-white
 "
             ></div>
@@ -84,8 +84,8 @@ export default function Contact() {
               {/* Name */}
               <div className="relative">
                 <FaUser
-                  className={`absolute top-1/2 -translate-y-1/2 text-[#530073] text-xl 
-                  ${isRTL ? "right-4" : "left-4"}`}
+                  className={`absolute top-1/2 -translate-y-1/2 text-[#530073] text-lg sm:text-xl 
+                  ${isRTL ? "right-3 sm:right-4" : "left-3 sm:left-4"}`}
                 />
                 <input
                   type="text"
@@ -93,16 +93,16 @@ export default function Contact() {
                   placeholder={t('contact.name')}
                   value={formData.name}
                   onChange={handleChange}
-                  className={`w-full  text-[#152F44] placeholder:text-[#152F44] bg-[#FFF7FE] border-2 border-[#DFDFDF] rounded-3xl 
-                    px-12 py-3 sm:py-4 focus:border-[#530073] transition text-lg`}
+                  className={`w-full text-[#152F44] placeholder:text-[#152F44] bg-[#FFF7FE] border-2 border-[#DFDFDF] rounded-3xl 
+                    px-10 sm:px-12 py-2.5 sm:py-3 md:py-4 focus:border-[#530073] transition text-base sm:text-lg`}
                 />
               </div>
 
               {/* Phone */}
               <div className="relative">
                 <FaPhone
-                  className={`absolute top-1/2 -translate-y-1/2 text-[#530073] text-xl 
-                  ${isRTL ? "right-4" : "left-4"}`}
+                  className={`absolute top-1/2 -translate-y-1/2 text-[#530073] text-lg sm:text-xl 
+                  ${isRTL ? "right-3 sm:right-4" : "left-3 sm:left-4"}`}
                 />
                 <input
                   type="tel"
@@ -110,15 +110,15 @@ export default function Contact() {
                   placeholder={t('contact.phone')}
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full text-[#152F44] placeholder:text-[#152F44] border-2 bg-[#FFF7FE] border-[#DFDFDF] rounded-3xl px-12 py-3 sm:py-4 focus:border-[#530073] transition text-lg"
+                  className="w-full text-[#152F44] placeholder:text-[#152F44] border-2 bg-[#FFF7FE] border-[#DFDFDF] rounded-3xl px-10 sm:px-12 py-2.5 sm:py-3 md:py-4 focus:border-[#530073] transition text-base sm:text-lg"
                 />
               </div>
 
               {/* Email */}
               <div className="relative">
                 <FaEnvelope
-                  className={`absolute top-1/2 -translate-y-1/2 text-[#530073] text-xl 
-                  ${isRTL ? "right-4" : "left-4"}`}
+                  className={`absolute top-1/2 -translate-y-1/2 text-[#530073] text-lg sm:text-xl 
+                  ${isRTL ? "right-3 sm:right-4" : "left-3 sm:left-4"}`}
                 />
                 <input
                   type="email"
@@ -126,15 +126,15 @@ export default function Contact() {
                   placeholder={t('contact.email')}
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full border-2 text-[#152F44]   placeholder:text-[#152F44] bg-[#FFF7FE] border-[#DFDFDF] rounded-3xl px-12 py-3 sm:py-4 focus:border-[#530073] transition text-lg"
+                  className="w-full border-2 text-[#152F44] placeholder:text-[#152F44] bg-[#FFF7FE] border-[#DFDFDF] rounded-3xl px-10 sm:px-12 py-2.5 sm:py-3 md:py-4 focus:border-[#530073] transition text-base sm:text-lg"
                 />
               </div>
 
               {/* Message */}
               <div className="relative">
                 <FaRegCommentDots
-                  className={`absolute top-6 text-[#530073] text-xl 
-                  ${isRTL ? "right-4" : "left-4"}`}
+                  className={`absolute top-4 sm:top-6 text-[#530073] text-lg sm:text-xl 
+                  ${isRTL ? "right-3 sm:right-4" : "left-3 sm:left-4"}`}
                 />
                 <textarea
                   name="message"
@@ -142,13 +142,13 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
-                  className="w-full border-2 text-[#152F44] placeholder:text-[#152F44] bg-[#FFF7FE] border-[#DFDFDF] rounded-3xl px-12 py-3 sm:py-4 focus:border-[#530073] transition resize-none text-lg"
+                  className="w-full border-2 text-[#152F44] placeholder:text-[#152F44] bg-[#FFF7FE] border-[#DFDFDF] rounded-3xl px-10 sm:px-12 py-2.5 sm:py-3 md:py-4 focus:border-[#530073] transition resize-none text-base sm:text-lg"
                 ></textarea>
               </div>
 
               <button
                 onClick={handleSubmit}
-                className="w-fit px-8 py-2   text-[#530073]   rounded-2xl   border border-[#530073] transition font-semibold text-lg  "
+                className="w-full sm:w-fit px-6 sm:px-8 py-2.5 sm:py-2 text-[#530073] rounded-2xl border border-[#530073] transition font-semibold text-base sm:text-lg hover:bg-[#530073] hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-300 focus:ring-offset-2"
               >
                 {t('contact.submit')}
               </button>
