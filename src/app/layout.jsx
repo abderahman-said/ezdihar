@@ -5,6 +5,8 @@ import I18nProvider from "../components/I18nProvider";
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+// Import AOS styles
+import 'aos/dist/aos.css';
 import LoadingScreen from "@/components/layout/LoadingScreen";
 import HtmlAttributes from "../components/HtmlAttributes";
 import SkipToContent from "../components/SkipToContent";

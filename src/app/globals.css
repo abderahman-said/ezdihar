@@ -78,15 +78,25 @@ html[dir="ltr"] .services::before {
 .bg-card-white {
     background: url('../../public/Path 52970.png') no-repeat;
     background-size: 100% 100%;
+    background-position: center;
 }
 
 .bg-item {
     background: url('../../public/Path 52971.png') no-repeat;
     background-size: 100% 100%;
+    background-position: center;
+}
+
+@media (max-width: 640px) {
+    .bg-card-white,
+    .bg-item {
+        background-size: cover;
+    }
 }
 
 .SuccessStories {
     position: relative;
+    overflow: hidden;
 }
 
 .SuccessStories::before {
@@ -94,8 +104,22 @@ html[dir="ltr"] .services::before {
     position: absolute;
     inset: 0;
     background: url('/Group 132967.png') no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     z-index: 0;
+}
+
+@media (max-width: 640px) {
+    .SuccessStories::before {
+        background-size: cover;
+        background-position: center top;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .SuccessStories::before {
+        background-size: 100% 100%;
+    }
 }
 
 html[dir="ltr"] .SuccessStories::before {
@@ -150,32 +174,81 @@ html[dir="ltr"] .footer::before {
 }
 
 .success-stories-custom-swiper {
-    padding-bottom: 50px;
+    padding-bottom: 50px !important;
 }
 
 .success-stories-custom-swiper .swiper-pagination {
-    bottom: 0 !important;
+    position: relative !important;
+    bottom: auto !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    margin-top: 20px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0 !important;
+}
+
+.success-stories-custom-swiper .swiper-pagination-bullet {
+    margin: 0 6px !important;
+    position: relative !important;
+}
+
+.success-stories-custom-swiper .swiper-pagination-bullet.custom-success-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    background: transparent !important;
+    opacity: 1 !important;
+    transition: all 0.3s ease !important;
+    margin: 0 6px !important;
+    border: 2px solid #707070 !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    position: relative !important;
 }
 
 .custom-success-bullet {
-    width: 12px;
-    height: 12px;
-    background: transparent;
-    opacity: 1;
-    border: 2px solid #707070;
-    transition: all 0.3s ease;
+    width: 12px !important;
+    height: 12px !important;
+    background: transparent !important;
+    opacity: 1 !important;
+    transition: all 0.3s ease !important;
     margin: 0 6px !important;
+    border: 2px solid #707070 !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
 }
 
+.custom-success-bullet:hover {
+    border-color: #6b2a98 !important;
+    transform: scale(1.1) !important;
+}
+
+.success-stories-custom-swiper .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.success-stories-custom-swiper .swiper-pagination-bullet.custom-success-bullet-active,
 .custom-success-bullet-active {
-    background: #6b2a98;
-    width: 32px;
-    border-radius: 6px;
-    border: 2px solid #6b2a98;
+    background: #6b2a98 !important;
+    width: 32px !important;
+    height: 12px !important;
+    border-radius: 6px !important;
+    border: 2px solid #6b2a98 !important;
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+.success-stories-custom-swiper .swiper-pagination-bullet.swiper-pagination-bullet-active:hover,
+.success-stories-custom-swiper .swiper-pagination-bullet.custom-success-bullet-active:hover {
+    transform: scale(1.05) !important;
 }
 
 
-/* Swiper direction based on language */
+/* Ensure proper RTL support */
 
 html[dir="rtl"] .success-stories-custom-swiper .swiper-wrapper {
     direction: rtl;
@@ -185,12 +258,63 @@ html[dir="ltr"] .success-stories-custom-swiper .swiper-wrapper {
     direction: ltr;
 }
 
-@media (max-width: 640px) {
+
+/* Ensure pagination works in both directions */
+
+html[dir="rtl"] .success-stories-custom-swiper .swiper-pagination,
+html[dir="ltr"] .success-stories-custom-swiper .swiper-pagination {
+    direction: ltr;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .success-stories-custom-swiper {
+        padding-bottom: 35px !important;
+    }
+    .success-stories-custom-swiper .swiper-pagination {
+        margin-top: 12px !important;
+    }
     .custom-success-bullet {
-        width: 10px;
-        height: 10px;
+        width: 8px !important;
+        height: 8px !important;
+        margin: 0 3px !important;
+        border-width: 1.5px !important;
     }
     .custom-success-bullet-active {
-        width: 24px;
+        width: 20px !important;
+        height: 8px !important;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 640px) {
+    .success-stories-custom-swiper {
+        padding-bottom: 40px !important;
+    }
+    .success-stories-custom-swiper .swiper-pagination {
+        margin-top: 15px !important;
+    }
+    .custom-success-bullet {
+        width: 10px !important;
+        height: 10px !important;
+        margin: 0 4px !important;
+    }
+    .custom-success-bullet-active {
+        width: 24px !important;
+        height: 10px !important;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+    .success-stories-custom-swiper {
+        padding-bottom: 45px !important;
+    }
+    .success-stories-custom-swiper .swiper-pagination {
+        margin-top: 18px !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .success-stories-custom-swiper {
+        padding-bottom: 48px !important;
     }
 }
