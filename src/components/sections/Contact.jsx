@@ -93,7 +93,7 @@ export default function Contact() {
                   placeholder={t('contact.name')}
                   value={formData.name}
                   onChange={handleChange}
-                  className={`w-full text-[#152F44] placeholder:text-[#152F44] bg-[#FFF7FE] border-2 border-[#DFDFDF] rounded-3xl 
+                  className={`w-full text-[#152F44] placeholder:text-[#707070] bg-[#FFF7FE] border-2 border-[#DFDFDF] rounded-3xl 
                     px-10 sm:px-12 py-2.5 sm:py-3 md:py-4 focus:border-[#530073] transition text-base sm:text-lg`}
                 />
               </div>
@@ -110,7 +110,7 @@ export default function Contact() {
                   placeholder={t('contact.phone')}
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full text-[#152F44] placeholder:text-[#152F44] border-2 bg-[#FFF7FE] border-[#DFDFDF] rounded-3xl px-10 sm:px-12 py-2.5 sm:py-3 md:py-4 focus:border-[#530073] transition text-base sm:text-lg"
+                  className="w-full text-[#152F44] placeholder:text-[#707070] border-2 bg-[#FFF7FE] border-[#DFDFDF] rounded-3xl px-10 sm:px-12 py-2.5 sm:py-3 md:py-4 focus:border-[#530073] transition text-base sm:text-lg"
                 />
               </div>
 
@@ -126,7 +126,7 @@ export default function Contact() {
                   placeholder={t('contact.email')}
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full border-2 text-[#152F44] placeholder:text-[#152F44] bg-[#FFF7FE] border-[#DFDFDF] rounded-3xl px-10 sm:px-12 py-2.5 sm:py-3 md:py-4 focus:border-[#530073] transition text-base sm:text-lg"
+                  className="w-full border-2 text-[#152F44] placeholder:text-[#707070] bg-[#FFF7FE] border-[#DFDFDF] rounded-3xl px-10 sm:px-12 py-2.5 sm:py-3 md:py-4 focus:border-[#530073] transition text-base sm:text-lg"
                 />
               </div>
 
@@ -142,7 +142,7 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
-                  className="w-full border-2 text-[#152F44] placeholder:text-[#152F44] bg-[#FFF7FE] border-[#DFDFDF] rounded-3xl px-10 sm:px-12 py-2.5 sm:py-3 md:py-4 focus:border-[#530073] transition resize-none text-base sm:text-lg"
+                  className="w-full border-2 text-[#152F44] placeholder:text-[#707070] bg-[#FFF7FE] border-[#DFDFDF] rounded-3xl px-10 sm:px-12 py-2.5 sm:py-3 md:py-4 focus:border-[#530073] transition resize-none text-base sm:text-lg"
                 ></textarea>
               </div>
 
