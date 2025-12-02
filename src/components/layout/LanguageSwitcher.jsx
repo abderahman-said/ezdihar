@@ -34,7 +34,7 @@ export default function LanguageSwitcher({ mobile = false, color = "#FFFFFF" }) 
       aria-pressed="false"
     >
       <span aria-hidden="true">{i18n.language === 'ar' ? 'English' : 'العربية'}</span>
-      <FaGlobe className="w-4 h-4" style={{ color }} aria-hidden="true" />
+      <FaGlobe className="w-4 h-4 text-[#33BEF2]"  aria-hidden="true" />
     </button>
   );
 }

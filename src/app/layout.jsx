@@ -15,12 +15,12 @@ import SkipToContent from "../components/SkipToContent";
 const geSsTwo = localFont({
   src: [
     {
-      path: "../../public/ArbFONTS-GE_Contrast_Bold_2.otf",
+      path: "../../public/ArbFONTS-GE_SS_Two_Bold.otf",
       weight: "800",
       style: "normal",
     },
     {
-      path: "../../public/ArbFONTSMedium.otf",
+      path: "../../public/ArbFONTS-GE-SS-Two-Light.otf",
       weight: "500",
       style: "normal",
     },

@@ -3,13 +3,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
-import {
-  FaBrain,
-  FaChartLine,
-  FaMicrophone,
-  FaRobot,
-  FaShieldAlt,
-} from 'react-icons/fa';
 import { IoTriangleOutline, IoTriangle } from "react-icons/io5";
 
 export default function Services() {
@@ -20,31 +13,31 @@ export default function Services() {
     {
       title: t('services.items.arVr.title'),
       description: t('services.items.arVr.description'),
-      icon: FaMicrophone,
+      icon: '/Path 52978.png',
       hoverImage: '/pics/services-robot.png',
     },
     {
       title: t('services.items.branding.title'),
       description: t('services.items.branding.description'),
-      icon: FaBrain,
+      icon: '/Group 69892.png',
       hoverImage: '/pics/Mask Group 7.png',
     },
     {
       title: t('services.items.events.title'),
       description: t('services.items.events.description'),
-      icon: FaChartLine,
+      icon: '/g2793.png',
       hoverImage: '/pics/Mask Group 8.png',
     },
     {
       title: t('services.items.hologram.title'),
       description: t('services.items.hologram.description'),
-      icon: FaRobot,
+      icon: '/Group 69893.png',
       hoverImage: '/pics/Mask Group 9.png',
     },
     {
       title: t('services.items.digital.title'),
       description: t('services.items.digital.description'),
-      icon: FaShieldAlt,
+      icon: '/Path 52983.png',
       hoverImage: '/pics/Mask Group 17.png',
     },
   ];
@@ -78,7 +71,6 @@ export default function Services() {
 
             <div className="space-y-0 mt-4 sm:mt-0">
               {services.map((service, index) => {
-                const Icon = service.icon;
                 const isHovered = hoveredIndex === index;
                 const isLast = index === services.length - 1;
 
@@ -101,15 +93,23 @@ export default function Services() {
                         <IoTriangleOutline className="text-xl sm:text-2xl md:text-3xl text-white -rotate-90 shrink-0" aria-hidden="true" />
                       )}
 
-                      {/* Service Icon */}
-                      <Icon
-                        className={`shrink-0 transition-all duration-500 ${
-                          isHovered
-                            ? 'text-3xl sm:text-4xl md:text-5xl text-[#33BEF2] scale-110'
-                            : 'text-2xl sm:text-3xl md:text-4xl text-white'
-                        }`}
-                        aria-hidden="true"
-                      />
+                      {/* Service Icon Image */}
+                      <div className={`shrink-0 transition-all duration-500 ${
+                        isHovered ? 'scale-110' : 'scale-100'
+                      }`}>
+                        <Image
+                          src={service.icon}
+                          alt={service.title}
+                          width={isHovered ? 56 : 48}
+                          height={isHovered ? 56 : 48}
+                          className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 object-contain transition-all duration-500"
+                          style={{
+                            filter: isHovered 
+                              ? 'invert(67%) sepia(96%) saturate(2032%) hue-rotate(163deg) brightness(100%) contrast(90%)'
+                              : 'none'
+                          }}
+                        />
+                      </div>
 
                       <div className="flex-1 min-w-0">
                         <h3 className={`font-bold text-[#F9F7FB] transition-all text-base sm:text-lg md:text-xl lg:text-2xl duration-300`}>
