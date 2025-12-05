@@ -31,9 +31,14 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-16 items-center w-full">
           {/* Text Content */}
           <div className={`space-y-3 sm:space-y-4 md:space-y-8 order-2 md:order-1 text-center ${dir === 'rtl' ? 'md:text-right' : 'md:text-left'}`}>
+
             <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#fff] ">
               {t('hero.title')}
             </h1>
+            {dir === 'rtl' ? null : <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#fff] ">
+              {t('hero.title_')}
+            </div>}
+
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#33BEF2] font-bold leading-tight">
               {t('hero.subtitle')}
             </h2>
