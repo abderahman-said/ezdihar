@@ -3,6 +3,7 @@
 import { useTranslation } from 'react-i18next';
 import { useLanguage } from '@/hooks/useLanguage';
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import Image from 'next/image';
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -12,9 +13,9 @@ export default function Hero() {
     <section id="home" className="relative min-h-screen    overflow-x-hidden">
       {/* Glowing Effects */}
       <div className="absolute inset-0 z-[1]">
-        <div className="absolute top-1/4 left-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-blue-500/30 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-purple-500/30 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 left-1/2 w-48 sm:w-64 h-48 sm:h-64 bg-cyan-400/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/4 end-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-blue-500/30 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 start-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-purple-500/30 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/2 end-1/2 w-48 sm:w-64 h-48 sm:h-64 bg-cyan-400/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
       </div>
 
       {/* Tech Grid Background */}
@@ -30,46 +31,54 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-16 items-center w-full">
           {/* Text Content */}
           <div className={`space-y-3 sm:space-y-4 md:space-y-8 order-2 md:order-1 text-center ${dir === 'rtl' ? 'md:text-right' : 'md:text-left'}`}>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#33BEF2] font-bold leading-tight">
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-[#fff] ">
               {t('hero.title')}
             </h1>
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-purple-300">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#33BEF2] font-bold leading-tight">
               {t('hero.subtitle')}
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed px-2 sm:px-0">
               {t('hero.description')}
-            </p>
+            </p> <Image
+              src={"/line.png"}
+              width={14}
+              height={348.57}
+              alt={t('services.title')}
+              className="absolute z-[2] start-[-30px] top-[50%] translate-y-[-50%]  h-[348px]  w-[14px] object-contain  "
+              priority
+            />
+
             <div className="flex gap-3 sm:gap-5 pt-4 justify-center md:justify-start" role="list">
-              <a 
-                href="https://www.facebook.com" 
-                target="_blank" 
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="transition transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-purple-300 focus:ring-offset-2 rounded p-2"
                 aria-label={t('common.visitFacebook')}
               >
                 <FaFacebookF className="text-white text-lg sm:text-2xl" aria-hidden="true" />
               </a>
-              <a 
-                href="https://www.instagram.com" 
-                target="_blank" 
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="transition transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-purple-300 focus:ring-offset-2 rounded p-2"
                 aria-label={t('common.visitInstagram')}
               >
                 <FaInstagram className="text-white text-lg sm:text-2xl" aria-hidden="true" />
               </a>
-              <a 
-                href="https://www.twitter.com" 
-                target="_blank" 
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="transition transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-purple-300 focus:ring-offset-2 rounded p-2"
                 aria-label={t('common.visitTwitter')}
               >
                 <FaTwitter className="text-white text-lg sm:text-2xl" aria-hidden="true" />
               </a>
-              <a 
-                href="https://www.linkedin.com" 
-                target="_blank" 
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="transition transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-purple-300 focus:ring-offset-2 rounded p-2"
                 aria-label={t('common.visitLinkedIn')}

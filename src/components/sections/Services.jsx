@@ -47,16 +47,11 @@ export default function Services() {
     hoveredIndex >= 0 ? services[hoveredIndex]?.hoverImage ?? DEFAULT_ROBOT : DEFAULT_ROBOT;
 
   return (
-    <section id="services" className="py-12 sm:py-16 md:py-20 lg:py-28 services min-h-[100vh] sm:min-h-[120vh] text-white relative overflow-hidden">
+    <section id="services" className="py-12 sm:py-16 md:py-20 relative lg:py-28 services min-h-[100vh] sm:min-h-[120vh] text-white relative overflow-hidden">
       <div className="absolute inset-0 opacity-10 pointer-events-none z-[1]">
         <div className="absolute inset-0 bg-gradient-radial from-purple-600/20 to-transparent" />
       </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
-          {/* Services List */}
-          <div className="order-2 md:order-1">
-            <header className="text-center sm:text-right mb-6 sm:mb-0">
+<header className=" pb-16 sm:pb-10 text-center relative z-10  ">
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3">
                 {t('services.title')}
               </h2>
@@ -64,10 +59,15 @@ export default function Services() {
                 <div className="w-16 sm:w-20 h-2 bg-white rounded-xl"></div>
                 <div className="absolute top-1/2 -left-2 -translate-y-1/2 w-3 h-3 sm:w-4 sm:h-4 bg-[#33BEF2] rounded-full border-2 sm:border-4 border-[#530073]" />
               </div>
-              <p className="mt-3 sm:mt-4 text-base sm:text-lg md:text-xl lg:text-2xl text-[#f9f7fbd5]">
+              <p className="mt-3 text-[#F9F7FB] sm:mt-4 text-base sm:text-lg md:text-xl lg:text-2xl text-[#f9f7fbd5]">
                 {t('services.subtitle')}
               </p>
             </header>
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
+          {/* Services List */}
+          <div className="order-2 md:order-1">
+            
 
             <div className="space-y-0 mt-4 sm:mt-0">
               {services.map((service, index) => {
@@ -88,9 +88,9 @@ export default function Services() {
                     >
                       {/* Triangle Icon */}
                       {isHovered ? (
-                        <IoTriangle className="text-2xl sm:text-3xl md:text-4xl text-white -rotate-90 shrink-0" aria-hidden="true" />
+                        <IoTriangle className="text-2xl  sm:text-3xl md:text-4xl text-white -rotate-90 ltr:rotate-90 shrink-0" aria-hidden="true" />
                       ) : (
-                        <IoTriangleOutline className="text-xl sm:text-2xl md:text-3xl text-white -rotate-90 shrink-0" aria-hidden="true" />
+                        <IoTriangleOutline className="text-xl   sm:text-2xl md:text-3xl text-white -rotate-90 ltr:rotate-90 shrink-0" aria-hidden="true" />
                       )}
 
                       {/* Service Icon Image */}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Image from "next/image";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
@@ -10,6 +10,7 @@ import AOS from 'aos';
 export default function SuccessStories() {
   const { t, i18n } = useTranslation();
   const swiperRef = useRef(null);
+  const [swiperKey, setSwiperKey] = useState(0);
 
   const stories = [
     {
@@ -42,42 +43,34 @@ export default function SuccessStories() {
     }
   ];
 
-  // Reset Swiper when language changes and refresh AOS
+  // Handle language change and force Swiper re-render
   useEffect(() => {
-    if (swiperRef.current) {
-      swiperRef.current.update();
-      swiperRef.current.slideTo(0);
-    }
-    // Refresh AOS animations after language change
+    // Force Swiper to re-render with new direction
+    setSwiperKey(prev => prev + 1);
+    
+    // Refresh AOS after language change
     const refreshTimer = setTimeout(() => {
-      if (typeof window !== 'undefined' && AOS) {
-        AOS.refresh();
-      }
-    }, 200);
-
-    return () => clearTimeout(refreshTimer);
-  }, [i18n.language]);
-
-  // Refresh AOS when component mounts and after Swiper initializes
-  useEffect(() => {
-    const timer1 = setTimeout(() => {
       if (typeof window !== 'undefined' && AOS) {
         AOS.refresh();
       }
     }, 300);
 
-    // Also refresh after Swiper is ready
-    const timer2 = setTimeout(() => {
-      if (typeof window !== 'undefined' && AOS && swiperRef.current) {
+    return () => clearTimeout(refreshTimer);
+  }, [i18n.language]);
+
+  // Initial AOS refresh
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (typeof window !== 'undefined' && AOS) {
         AOS.refresh();
       }
     }, 500);
 
-    return () => {
-      clearTimeout(timer1);
-      clearTimeout(timer2);
-    };
+    return () => clearTimeout(timer);
   }, []);
+
+  // Determine if RTL based on current language
+  const isRTL = i18n.language === 'ar';
 
   return (
     <section className="SuccessStories pb-8 sm:pb-12 md:pb-16 lg:pb-24 pt-12 sm:pt-16 md:pt-24 lg:pt-32 xl:pt-[150px]">
@@ -93,10 +86,10 @@ export default function SuccessStories() {
 
         <div className="max-w-[965.67px] mx-auto pb-6 sm:pb-8 md:pb-12 lg:pb-16" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
           <Swiper
-            key={i18n.language}
+            key={swiperKey}
+            dir={isRTL ? 'rtl' : 'ltr'}
             onSwiper={(swiper) => {
               swiperRef.current = swiper;
-              // Refresh AOS after Swiper is initialized
               setTimeout(() => {
                 if (typeof window !== 'undefined' && AOS) {
                   AOS.refresh();
@@ -104,7 +97,6 @@ export default function SuccessStories() {
               }, 100);
             }}
             onSlideChange={() => {
-              // Refresh AOS when slide changes
               setTimeout(() => {
                 if (typeof window !== 'undefined' && AOS) {
                   AOS.refresh();
@@ -122,6 +114,7 @@ export default function SuccessStories() {
             autoplay={{
               delay: 5000,
               disableOnInteraction: false,
+              reverseDirection: isRTL,
             }}
             loop={true}
             breakpoints={{

@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
-import { FaMapMarkerAlt, FaChartLine, FaRobot } from "react-icons/fa";
 
 export default function About() {
   const { t } = useTranslation();
@@ -56,39 +55,33 @@ export default function About() {
 
             <div className="space-y-3 sm:space-y-4 md:space-y-6 pt-2 sm:pt-4">
               <div className="flex items-start gap-3 sm:gap-4 md:gap-6">
-                <FaMapMarkerAlt className="text-[#33BEF2] text-base sm:text-xl md:text-2xl lg:text-3xl shrink-0 mt-1" aria-hidden="true" />
+                <Image src={"/Group 66136.png"} alt="team icon" width={35} height={35} className="w-[35px] h-[35px] object-contain" aria-hidden="true" />
 
-                <div>
-                  <p className="text-[#707070] text-sm sm:text-lg font-medium">
+                   <p className="text-[#707070] text-sm sm:text-lg font-medium">
                     {t('about.location')}
                   </p>
-                  <p className="text-[#707070] mt-1 text-sm sm:text-base">
-                    {t('about.locationSub')}
-                  </p>
-                </div>
+                
+                
               </div>
 
               <div className="flex items-start gap-3 sm:gap-4 md:gap-6">
-                <FaChartLine className="text-[#33BEF2] text-base sm:text-xl md:text-2xl lg:text-3xl shrink-0 mt-1" aria-hidden="true" />
+                <Image src={"/g1083.png"} alt="team icon" width={35} height={35} className="w-[35px] h-[35px] object-contain" aria-hidden="true" />
 
-                <div>
+             
                   <p className="text-[#707070] text-sm sm:text-lg font-medium">
                     {t('about.stats')}
                   </p>
-                  <p className="text-[#707070] mt-1 text-sm sm:text-base">
-                    {t('about.statsSub')}
-                  </p>
-                </div>
+                 
               </div>
 
               <div className="flex items-start gap-3 sm:gap-4 md:gap-6">
-                <FaRobot className="text-[#33BEF2] text-base sm:text-xl md:text-2xl lg:text-3xl shrink-0 mt-1" aria-hidden="true" />
+                <Image src={"/Group 66137.png"} alt="team icon" width={35} height={35} className="w-[35px] h-[35px] object-contain" aria-hidden="true" />
 
-                <div>
+                
                   <p className="text-[#707070] text-sm sm:text-lg font-medium">
                     {t('about.team')}
                   </p>
-                </div>
+                
               </div>
             </div>
           </div>

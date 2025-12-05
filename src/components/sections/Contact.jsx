@@ -109,8 +109,9 @@ export default function Contact() {
                   name="phone"
                   placeholder={t('contact.phone')}
                   value={formData.phone}
+                   style={isRTL ? { textAlign: "right" } : { textAlign: "left" }}
                   onChange={handleChange}
-                  className="w-full text-[#152F44] placeholder:text-[#707070] border-2 bg-[#FFF7FE] border-[#DFDFDF] rounded-3xl px-10 sm:px-12 py-2.5 sm:py-3 md:py-4 focus:border-[#530073] transition text-base sm:text-lg"
+                  className="w-full text-start   placeholder:text-[#707070] border-2 bg-[#FFF7FE] border-[#DFDFDF] rounded-3xl px-10 sm:px-12 py-2.5 sm:py-3 md:py-4 focus:border-[#530073] transition text-base sm:text-lg"
                 />
               </div>
 

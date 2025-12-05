@@ -31,6 +31,8 @@ export default function ChangeLandUse() {
         <div className="text-center mb-8 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-[#60008E]">
             {t('whyChoose.title')}
+            
+            <span className='text-[#33BEF2]'>{t('whyChoose.title_')}</span>
           </h2>
           <p className="text-lg sm:text-2xl text-[#33BEF2] max-w-3xl mx-auto">
             {t('whyChoose.subtitle')}

@@ -12,20 +12,18 @@
         "mobileMenu": "Mobile menu"
     },
     "hero": {
-        "title": "Izdhar",
-        "subtitle": "Technology Beyond Imagination",
-        "description": "We develop technology with expertise in business management and human resources on artificial intelligence to reach solutions for business and modern technology for its account without complexity for everything you have Tangier without worry"
+        "title": "IzdWe Create an Authentic Brand Identityhar",
+        "subtitle": "to Thrive",
+        "description": " We bring your brand to life through immersive experiences powered by AR, VR, and holographic."
     },
     "about": {
-        "title": "About",
-        "companyName": "Izdhar",
-        "heading": "Transforming Vision into Tangible Reality",
-        "description": "Izdhar is a Saudi magazine for intelligent marketing complexity definition of many to continue commercial services with their understanding by collecting income with mechanisms and modern technology for its account fighting anything Tangier without worry for the future",
-        "location": "Our main headquarters in the Kingdom of Saudi Arabia with global capabilities",
-        "locationSub": "Globally",
-        "stats": "(6.3) Revenue, (25) companies in virtual reality technologies",
-        "statsSub": "and smart registration privacy",
-        "team": "Technology team with specialized expertise"
+        "title": "About ",
+        "companyName": "EzdiAR",
+        "heading": " We Transform your vision into Immersive Reality.",
+        "description": " EzdiAR is a Saudi immersive marketing agency redefining concept of branding through connect with their audiences. We merge creativity, data, and cutting-edge technology to create experiences that are not only seen — but felt.",
+        "location": "Saudi-based with global reach.",
+         "stats": "Experts in AR/VR, hologram,.",
+         "team": "Bridging technology with authentic cultural storytelling."
     },
     "services": {
         "title": "Our Services",
@@ -50,7 +48,7 @@
         "cta": "Learn More"
     },
     "contact": {
-        "title": "Contact Us",
+        "title": "Contact Now",
         "name": "Name",
         "phone": "Phone Number",
         "email": "Email",
@@ -60,11 +58,11 @@
         "location": "Riyadh, Kingdom of Saudi Arabia"
     },
     "footer": {
-        "tagline": "We create the future of technology with innovative AI solutions",
+        "tagline": "We create an authentic brand identity to thrive  ",
         "services": "Our Services",
         "about": "About Us",
         "follow": "Follow Us",
-        "rights": "All rights reserved © 2024 Izdhar",
+        "rights": "All rights reserved © 2024 EzdiAR",
         "privacy": "Privacy Policy",
         "terms": "Terms and Conditions",
         "footerNav": "Footer navigation"
@@ -77,10 +75,10 @@
         "visitLinkedIn": "Visit our LinkedIn page"
     },
     "cta": {
-        "title": "Are you ready to build an immersive experience",
-        "titleBold": "for your business?",
-        "description": "Enter the innovations for business, technology, and future solutions",
-        "button": "Get Started with Us"
+        "title": " Ready to Build Your Immersive ",
+        "titleBold": "Brand Experience?",
+        "description": " EzdiAR | Where Creativity Meets Technology.",
+        "button": "Let's start"
     },
     "services": {
         "title": "Our Services",
@@ -88,15 +86,15 @@
         "more": "More of Our Services",
         "items": {
             "arVr": {
-                "title": "Augmented and Virtual Reality Experiences (AR & VR)",
-                "description": "Virtual showrooms, 360° tours, and unconventional interactive experiences for your clients"
+                "title": "AR & VR Experiences",
+                "description": " Virtual showrooms, 360° tours, and AR filters that engage customers beyond the screen."
             },
             "branding": {
-                "title": "Brand Strategy and Creative Innovation",
+                "title": "Brand Strategy & Creative Production",
                 "description": "Building a strong identity and creative strategies that make a difference"
             },
             "events": {
-                "title": "Event and Exhibition Management",
+                "title": "Event & Exhibition Management",
                 "description": "Organizing distinctive events with the latest technologies and professional execution"
             },
             "hologram": {
@@ -111,8 +109,8 @@
         "button": "Start with Us Now"
     },
     "successStories": {
-        "title": "Success Stories",
-        "subtitle": "Success stories that speak for themselves",
+        "title": "Case Studies Preview",
+        "subtitle": " Success Stories That Speak for Themselves.",
         "companies": {
             "alfalah": {
                 "name": "Al-Falah Real Estate",
@@ -133,11 +131,11 @@
         }
     },
     "testimonials": {
-        "title": "Client Testimonials",
-        "subtitle": "What our clients say about us.",
+        "title": "Testimonials",
+        "subtitle": " What Our Clients Say.",
         "items": {
             "1": {
-                "quote": "\"Working with Izdhar is like working with the future, every project exceeds expectations\"",
+                "quote": "\"Working with EzdiAR is like working with the future, every project exceeds expectations\"",
                 "name": "Mr. Ahmed Al-Zain",
                 "position": "CEO Manager ELFalah Realestate"
             },
@@ -152,35 +150,37 @@
                 "position": "General Manager YS Agency"
             },
             "4": {
-                "quote": "\"Izdhar is the perfect partner for our business growth... we highly recommend them\"",
+                "quote": "\"EzdiAR is the perfect partner for our business growth... we highly recommend them\"",
                 "name": "Mr. Ali Al-Ghamdi",
                 "position": "Owner AG Real Estate"
             }
         }
     },
     "whyChoose": {
-        "title": "Why Choose Izdhar?",
-        "subtitle": "Choose innovation the Saudi way",
+         "title": "Why Choose",
+    "title_": " EzdiAR?",
+  
+        "subtitle": " Experience Innovation the Saudi Way.",
         "features": {
             "1": {
-                "text": "Integrating ",
-                "bold": "Creativity and Technology ",
-                "after": "in one system"
+                "text": " ",
+                "bold": "Integrated creative",
+                "after": " and tech expertise under one roof."
             },
             "2": {
-                "text": "Deep understanding ",
-                "bold": "of Saudi culture and purchasing behavior"
-            },
+                "text": "Deep understanding of  ",
+                "bold": "Saudi culture",
+                "after": " and market behavior."},
             "3": {
-                "text": "Trusted by leading ",
-                "bold": "sectors ",
-                "middle": "Real Estate, ",
-                "after": "government entities, luxury"
+                "text": "",
+                "bold": "Trusted by ",
+        "middle": "",
+                "after": "real estate, luxury, and government sectors. "
             },
             "4": {
-                "text": "Measurable results ",
-                "bold": "and ",
-                "middle": "clear investment return",
+                "text": "Proven ROI and ",
+                "bold": "measurable impact",
+                "middle": "",
                 "after": ""
             }
         }
