@@ -105,6 +105,7 @@ export default function RootLayout({ children }) {
         <link rel="alternate" hrefLang="ar" href={`${baseUrl}/ar`} />
         <link rel="alternate" hrefLang="en" href={`${baseUrl}/en`} />
         <link rel="alternate" hrefLang="x-default" href={baseUrl} />
+        <meta name="google-site-verification" content="1fi7qxdsNs3sW9e0KGgoY9KHc04a82kG0VFPQtfnr7s" />
       </head>
       <body
         className={`${geSsTwo.variable} ${inter.variable} font-sans antialiased`}
